@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg
+
+WORKDIR /build
+ENTRYPOINT ["/bin/bash"]
