@@ -1,5 +1,8 @@
-nimv (0.0.1-2ubuntu1) jammy; urgency=medium
+nimv (0.0.2-2ubuntu1) jammy; urgency=medium
 
-  * Add support for all architectures.
+  * Move nimv installation directory to ~/.nimv
+  * Symlink Nim binaries to ~/.nimble/bin.
+  * Remove "v" prefix from version command.
+  * Speed up listing of available nim versions by using ls-remote
 
- -- Eric Mastro <nimv-ppa@fakey.me>  Tue, 11 Feb 2025 12:52:05 +0000
+ -- Eric Mastro <nimv-ppa@fakey.me>  Fri, 14 Feb 2025 15:39:48 +1100

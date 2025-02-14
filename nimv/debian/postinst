@@ -1,2 +1,20 @@
 #!/bin/sh
-chmod 755 /usr/local/bin/nimv
+set -e
+
+case "$1" in
+    configure)
+        if [ -f /usr/local/bin/nimv ]; then
+            chmod 755 /usr/local/bin/nimv
+        fi
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
