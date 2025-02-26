@@ -1,8 +1,12 @@
-nimv (0.0.2-2ubuntu1) jammy; urgency=medium
+nimv (0.0.4-1ubuntu1) jammy; urgency=medium
 
-  * Move nimv installation directory to ~/.nimv
-  * Symlink Nim binaries to ~/.nimble/bin.
-  * Remove "v" prefix from version command.
-  * Speed up listing of available nim versions by using ls-remote
+  * Update current session path to include `~/.nimble/bin` and provide
+  instructions on how to make it permanent after installation.
+  * Add `check` command that 1) checks nim binary platform matches current
+  platform, 2) checks nim binary version matches nim version selected with nimv,
+  and 3) checks if nimv has available updates
+  * Added `atlas` to the symlinked binaries.
+  * Clean up Nim installation sources after Nim install
+  * Update the readme.
 
- -- Eric Mastro <nimv-ppa@fakey.me>  Fri, 14 Feb 2025 15:39:48 +1100
+ -- Eric Mastro <nimv-ppa@fakey.me>  Thu, 14 Feb 2025 07:30:00 +0000

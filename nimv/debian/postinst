@@ -1,10 +1,12 @@
 #!/bin/sh
 set -e
 
+#DEBHELPER#
+
 case "$1" in
     configure)
-        if [ -f /usr/local/bin/nimv ]; then
-            chmod 755 /usr/local/bin/nimv
+        if [ -f /usr/bin/nimv ]; then
+            chmod 755 /usr/bin/nimv
         fi
     ;;
 

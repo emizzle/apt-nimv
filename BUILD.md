@@ -22,7 +22,7 @@ docker run -it \
 First build a tarball package:
 ```shell
 # Create orig tarball (excluding debian directory)
-tar --exclude='nimv/debian' -czf nimv_0.0.2.orig.tar.gz nimv/
+tar --exclude='nimv/debian' -czf nimv_0.0.4.orig.tar.gz nimv/
 ```
 
 Then sign the package:
@@ -30,6 +30,6 @@ Then sign the package:
 cd nimv
 debuild -S -sa # This will use your GPG key to sign the package
 cd ..
-dput -f nimv nimv_0.0.2-2ubuntu1_source.changes
+dput -f nimv-ppa nimv_0.0.4-1ubuntu1_source.changes
 ```
 

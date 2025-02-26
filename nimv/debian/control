@@ -12,3 +12,4 @@ Depends: ${misc:Depends}, git, curl
 Description: Nim version manager
  A tool to manage multiple versions of the Nim programming language.
  Allows installation and switching between different Nim versions.
+

@@ -4,4 +4,4 @@
 
 override_dh_install:
 	dh_install
-	chmod 755 debian/nimv/usr/local/bin/nimv
+	chmod 755 usr/bin/nimv
